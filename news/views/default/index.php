@@ -17,21 +17,23 @@ $this->params['breadcrumbs'][] = $this->title;
         $items = [];  
         
         $year=''; 
+        $submenu=[];
         // выборка лет и месяцев    
         foreach($years_months as $ym) {
             if (!$year){
-                $year=$ym[year];
+                $year=$ym['year'];
                 $submenu=[]; 
             }
-            if ($year!=$ym[year]){
+            if ($year!=$ym['year']){
                 $items[] = [
                 		'label' => "$year",
                     'url' => ['index', 'year' => "$year" ],
                     'items' => $submenu,
                 ];  
-                $year=$ym[year];
+                $year=$ym['year'];
                 $submenu=[]; 
             } 
+            
             $submenu[] = [
             		'label' => "$ym[month] ($ym[count])",
                 'url' => ['index', 'year' => "$ym[year]",'month'=>"$ym[month]" ],
