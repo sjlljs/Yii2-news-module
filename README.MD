@@ -1,12 +1,12 @@
-Ïîëîæèòü â ïàïêó common/modules.
+ĞŸĞ¾Ğ»Ğ¾Ğ¶Ğ¸Ñ‚ÑŒ Ğ² Ğ¿Ğ°Ğ¿ĞºÑƒ common/modules.
 
-Ïğèìåíèòü ìèãğàöèè yii migrate --migrationPath=@common/modules/news/migrations
-Ïîäêëş÷åíèå ìîäóëÿ:
+ĞŸÑ€Ğ¸Ğ¼ĞµĞ½Ğ¸Ñ‚ÑŒ Ğ¼Ğ¸Ğ³Ñ€Ğ°Ñ†Ğ¸Ğ¸ yii migrate --migrationPath=@common/modules/news/migrations
+ĞŸĞ¾Ğ´ĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ:
     'modules' => [
         'news' => [
             'class' => 'common\modules\news\news',
         ],
     ],    
 
-Äëÿ ôğîíòıíäà èñïîëüçóåòñÿ DefaultController, 'url' => ['/newsview/']
-Äëÿ áıêåíäà èñïîëüçóåòñÿ AdminContoller, 'url' => ['news/admin/index']
+Ğ”Ğ»Ñ Ñ„Ñ€Ğ¾Ğ½Ñ‚ÑĞ½Ğ´Ğ° Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·ÑƒĞµÑ‚ÑÑ DefaultController, 'url' => ['/newsview/']
+Ğ”Ğ»Ñ Ğ±ÑĞºĞµĞ½Ğ´Ğ° Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·ÑƒĞµÑ‚ÑÑ AdminContoller, 'url' => ['news/admin/index']
