@@ -26,7 +26,7 @@ class m150601_122145_create_news_table extends Migration
     public function safeDown()
     {
         $this->dropTable('{{%news}}');    
-        $this->dropForeignKey('fk_news_category','{{%news}}');
+        $this->dropForeignKey('{{%fk_news_category}}','{{%news}}');
     }
     
     /*
